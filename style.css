@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,500&family=Oswald:wght@200;300&family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+*{
+   
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Radio Canada', sans-serif;    
+    scroll-behavior: smooth;
+   
+}
+a{
+    text-decoration: none;
+}
+@media only screen and (min-width: 1014px) {
+    ul li a::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 3px;
+        background-color: ghostwhite;
+        margin: auto;
+        /* width: 50px; */
+        width: 0;
+        transition: 0.3s all ease-in-out;
+    }
+    ul li a:hover::after{
+      
+       width: 50px;
+    
+    }
+}
+
+ul li {
+    font-size: 20px;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+}
+/* //about */
+    .content{
+        width: 100%;
+        background-color: black;
+         padding: 20px;
+         height: 100%;
+        color: white;
+        border-radius: 20px;
+        }
+        .content h5{
+            line-height: 30px;
+        }
+        .card img{
+            border-radius: 20px;
+        }
+        .content-text h3{
+            font-size: 25px;
+            line-height: 33px;
+        }
+        .content-text p {
+    
+            line-height: 33px;
+        }
+        pre{
+            font-size: 20px;
+        }
+        @media screen and (max-width:375px) {
+                .content-text h3 {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                .content-text p{
+                    line-height: 25px;
+                }
+        }
+.review img{
+    width: 100px;
+    border-radius: 50%;
+}
+.underline{
+    width: 100px;
+    height: 5px;
+    margin: auto;
+    background-color: orange;
+}
+.star{
+    color: orange;
+}
+footer{
+    position: relative;
+}
+.btnUp{
+    position: absolute;
+       top: -20px; 
+       left: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+@media screen and (max-width:375px) {
+    .btnUp{
+        position: absolute;
+           top: -20px; 
+           left: 45%;
+           
+    }   
+}
